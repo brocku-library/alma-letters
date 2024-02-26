@@ -207,7 +207,7 @@
 	</xsl:when>
 <!-- IRC SC END -->
 <!-- IRC HAM START -->
-<xsl:when test="/notification_data/circ_desk_name='Hamilton Desk'">
+<xsl:when test="/notification_data/circ_desk_name='Burlington Desk'">
 <body>
         <xsl:attribute name="style">
           <xsl:call-template name="bodyStyleCss" /><!-- style.xsl -->
@@ -225,7 +225,7 @@
         	<table cellspacing="0" cellpadding="5" border="0">
 				<tr>
 				<td>
-					<h>@@inform_loaned_items@@ Instructional Resource Center, Hamilton Campus</h>
+					<h>@@inform_loaned_items@@ Instructional Resource Center, Burlington Campus</h>
 					<p><u>Note: Your books will be held for two weeks from today's date.</u> If they have not been picked up at that time, they will be removed from your account and returned to the shelves.</p>
 <!-- If you want to make changes to the information for pick up, edit the lines below. For adding more points please either copy the li tag and paste it where you want the extra bullet. If you want to change the pickup hours font size, change the h2 tags to p tags, like the one above it. -->
                     <p>It is essential that you review the below information before coming to pick up your books.</p> 
