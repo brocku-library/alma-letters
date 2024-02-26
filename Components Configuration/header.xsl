@@ -23,11 +23,14 @@
                                                 or (notification_data/user_for_printing/user_group = 'TUGUSER') 
                                                 or (notification_data/user/user_group = 'TUGUSER')">
                                     
-                                    <img src="https://ocul-gue.primo.exlibrisgroup.com/discovery/custom/01OCUL_GUE-GUELPH/img/gue-omni-logo-black.svg"
-                                         height="75" alt="logo" />
+                                    <!-- AFN VERSION 1.8 -->
+                                    <img src="https://ocul.on.ca/omni/images/omni_logo_for_letters.jpg" alt="Omni logo"/>
+                                    <!-- END OF AFN VERSION 1.8 -->
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <img src="cid:logo.jpg" alt="logo" />
+                                    <!-- AFN VERSION 1.8 -->
+                                    <img src="cid:logo.jpg" alt="Institution Name logo"/>
+                                    <!-- END OF AFN VERSION 1.8 -->
                                 </xsl:otherwise>
                             </xsl:choose>
                         </div>
