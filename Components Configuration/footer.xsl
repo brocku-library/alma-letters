@@ -182,7 +182,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 							<xsl:when test="$external_id = '01OCUL_OCAD' ">
 								<a href="https://ocadu.primo.exlibrisgroup.com/discovery/account?vid=01OCUL_OCAD:OMNI&amp;section=loans&amp;lang=fr"><xsl:call-template name="afn_fr_visit_home_account_link_text" /></a>
 							</xsl:when>
-							<!-- END OF AFN-VERSION 1.7 ADD McMaster & OCADU -->		
+							<!-- END OF AFN-VERSION 1.7 ADD McMaster & OCADU -->
+							<xsl:when test="$external_id = '01OCUL_TMU' ">
+          							<a href="https://torontomu.primo.exlibrisgroup.com/discovery/search?vid=01OCUL_TMU:01OCUL_TMU&amp;section=loans&amp;lang=fr"><xsl:call-template name="afn_fr_visit_home_account_link_text" /></a>
+         						</xsl:when>
 							<xsl:otherwise>
 								<xsl:call-template name="afn_fr_visit_home_account_link_text" />
 							</xsl:otherwise>
@@ -249,6 +252,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 								<a href="https://ocadu.primo.exlibrisgroup.com/discovery/account?vid=01OCUL_OCAD:OMNI&amp;section=loans&amp;lang=en"><xsl:call-template name="afn_en_visit_home_account_link_text" /></a>
 							</xsl:when>
 							<!-- END OF AFN-VERSION 1.7 ADD McMaster & OCADU -->		
+							<xsl:when test="$external_id = '01OCUL_TMU' ">
+          							<a href="https://torontomu.primo.exlibrisgroup.com/discovery/search?vid=01OCUL_TMU:01OCUL_TMU&amp;section=loans&amp;lang=en"><xsl:call-template name="afn_en_visit_home_account_link_text" /></a>
+         						</xsl:when>
 							<xsl:otherwise>
 								<xsl:call-template name="afn_en_visit_home_account_link_text" />
 							</xsl:otherwise>
@@ -345,6 +351,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 										<a href="https://ocadu.primo.exlibrisgroup.com/discovery/account?vid=01OCUL_OCAD:OMNI&amp;section=loans&amp;lang=fr"><xsl:call-template name="afn_fr_visit_home_account_link_text" /></a>
 									</xsl:when>
                                     <!-- END OF AFN-VERSION 1.7 ADD McMaster & OCADU -->		
+									<xsl:when test="$external_id = '01OCUL_TMU' ">
+          									<a href="https://torontomu.primo.exlibrisgroup.com/discovery/search?vid=01OCUL_TMU:01OCUL_TMU&amp;section=loans&amp;lang=fr"><xsl:call-template name="afn_fr_visit_home_account_link_text" /></a>
+         								</xsl:when>
 									<xsl:otherwise>
 										<xsl:call-template name="afn_fr_visit_home_account_link_text" />
 									</xsl:otherwise>
@@ -411,6 +420,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 										<a href="https://ocadu.primo.exlibrisgroup.com/discovery/account?vid=01OCUL_OCAD:OMNI&amp;section=loans&amp;lang=en"><xsl:call-template name="afn_en_visit_home_account_link_text" /></a>
 									</xsl:when>
                                     <!-- END OF AFN-VERSION 1.7 ADD McMaster & OCADU -->		
+									<xsl:when test="$external_id = '01OCUL_TMU' ">
+          									<a href="https://torontomu.primo.exlibrisgroup.com/discovery/search?vid=01OCUL_TMU:01OCUL_TMU&amp;section=loans&amp;lang=en"><xsl:call-template name="afn_en_visit_home_account_link_text" /></a>
+         								</xsl:when>
 									<xsl:otherwise>
 										<xsl:call-template name="afn_en_visit_home_account_link_text" />
 									</xsl:otherwise>
@@ -505,6 +517,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 										<a href="https://ocadu.primo.exlibrisgroup.com/discovery/account?vid=01OCUL_OCAD:OMNI&amp;lang=fr"><xsl:call-template name="afn_fr_account_link_text" /></a>
 									</xsl:when>
                                     <!-- END OF AFN-VERSION 1.7 ADD McMaster & OCADU -->		
+									<xsl:when test="$external_id = '01OCUL_TMU' ">
+          									<a href="https://torontomu.primo.exlibrisgroup.com/discovery/search?vid=01OCUL_TMU:01OCUL_TMU&amp;lang=fr"><xsl:call-template name="afn_fr_account_link_text" /></a>
+         								</xsl:when>
 								</xsl:choose>
 							</xsl:when>
 							<!-- default AFN language is english -->
@@ -565,7 +580,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                                     <xsl:when test="$external_id = '01OCUL_OCAD' ">
 										<a href="https://ocadu.primo.exlibrisgroup.com/discovery/account?vid=01OCUL_OCAD:OMNI&amp;lang=en"><xsl:call-template name="afn_en_account_link_text" /></a>
 									</xsl:when>
-                                    <!-- END OF AFN-VERSION 1.7 ADD McMaster & OCADU -->		
+                                    <!-- END OF AFN-VERSION 1.7 ADD McMaster & OCADU -->
+									<xsl:when test="$external_id = '01OCUL_TMU' ">
+          									<a href="https://torontomu.primo.exlibrisgroup.com/discovery/search?vid=01OCUL_TMU:01OCUL_TMU&amp;lang=en"><xsl:call-template name="afn_en_account_link_text" /></a>
+         								</xsl:when>
 								</xsl:choose>															
 							</xsl:otherwise>
 						</xsl:choose>
@@ -651,6 +669,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             OCAD University
         </xsl:when>
         <!-- END OF AFN-VERSION 1.7 ADD McMaster & OCADU -->		
+	<xsl:when test="contains($test_org_code, '01OCUL_TMU')">
+	    Toronto Metropolitan University
+	</xsl:when>
         <xsl:otherwise>
             <!-- AFN TODO -->
             <!-- your home institution -->
