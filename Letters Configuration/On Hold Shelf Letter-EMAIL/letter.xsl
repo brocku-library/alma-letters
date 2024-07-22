@@ -162,6 +162,17 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 							<!-- AFN TODO -->
 							<!-- handle local institution on hold (ie. PUT YOUR EXISTING HOLD LETTER INFO HERE between the xsl:otherwise tag)-->
 							<xsl:choose>
+								<xsl:when test="/notification_data/organization_unit/path='01OCUL.01OCUL_BU.MIW'">
+									<table cellspacing="0" cellpadding="5" border="0">
+										<tr>
+											<td>
+												<p>
+												    The following items are now ready for pickup at <b>Marilyn I. Walker School of Fine and Performing Arts</b> - <a href="https://brocku.ca/miwsfpa/facilities/the-learning-commons-at-the-miwsfpa/">Learning Commons</a>.
+											    </p>												
+											</td>
+										</tr>
+									</table>
+								</xsl:when>
 								<xsl:when test="/notification_data/organization_unit/path='01OCUL.01OCUL_BU.HAMILTON'">
 									<table cellspacing="0" cellpadding="5" border="0">
 										<tr>
